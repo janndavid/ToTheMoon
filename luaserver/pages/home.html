@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Landing Page</title>
+    <style>
+        
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Dark background */
+    color: #e6e6e6; /* Light text color */
+}
+
+header {
+    background-color: #333; /* Dark header background */
+    color: #fff; /* Light text color for header */
+    padding: 20px;
+    text-align: center;
+}
+
+header a {
+    color: #fff; /* Light text color for the anchor */
+    text-decoration: none;
+}
+
+nav {
+    background-color: #444; /* Slightly darker navigation background */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff; /* Light text color for navigation links */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+.panel {
+    background-color: #333; /* Darker background for panels */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 50%;
+    margin: auto;
+}
+
+.panel h2 {
+    color: #fff; /* Light text color for panel headings */
+}
+
+.panel p {
+    color: #ccc; /* Slightly dim text color for panel content */
+}
+
+
+footer {
+    background-color: #444; /* Slightly darker footer background */
+    color: #fff; /* Light text color for footer */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Button styles */
+button {
+    padding: 10px;
+    background-color: #2d2d2d; /* Base color */
+    color: #e6e6e6; /* Light text color for button */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #444; /* Darker hover effect */
+    color: #fff; /* Light text color on hover */
+}
+
+a {
+    color: #3498db; /* Accent color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+a:hover {
+    color: #1a1a1a; /* Darker text color on hover */
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="/">
+            <h1>To The Moon!</h1>
+        </a> 
+    </header>
+
+    <nav>
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+        <a href="/submits">Submits</a>
+    </nav>
+
+    <section>
+        <div class="panel">
+            <h2>To The Moon</h2>
+            <p>To The Moon is a Lua powered fullstack framework. Work is however in progress, and many features are still missing. As of now the
+                template engine is provided by tarantool template. A custom template engine is however being coded as you read. Other features
+                consist of a custom ORM (object relational mapper) which connects To The Moon with a sqlite database. Support for MySQL is also
+                being worked on. The setup of the project can be found in the documentation.</p>
+        </div>
+
+        <div class="panel">
+            <h2>The Tour</h2>
+            <p>This website showcases a few of To The Moon's features. The built in login page can be found in the top bar by pressing the button.
+                But to use the login feature you must first sign up. Do that by pressing the register button and sign up today! On the submitspage 
+                you can view all the submits that has been made.</p>
+        </div>
+
+        <div class="panel">
+            <h2>Title 3</h2>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+    </section>
+
+    <footer>
+        To The Moon - &copy; 2024 Jann Jacobsen
+    </footer>
+</body>
+
+</html>

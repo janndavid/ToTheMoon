@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Display children in a column layout */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label, input, button {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+input, button {
+  padding: 8px;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+h1 {
+  text-align: center;
+  color: #3498db;
+}
+
+/* Style for the table */
+table {
+  width: 50%; /* Adjusted to make the table more narrow */
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center; /* Center the text in cells */
+}
+
+th {
+  background-color: #3498db;
+  color: #fff;
+}

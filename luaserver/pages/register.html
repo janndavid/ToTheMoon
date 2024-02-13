@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Form</title>
+  <style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Dark background */
+    color: #e6e6e6; /* Light text color */
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #333; /* Slightly lighter than the background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #e6e6e6; /* Light text color for labels */
+}
+
+input,
+select {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #333; /* Darker background for input/select */
+    color: #ccc; /* Slightly dim text color for input/select */
+}
+
+select {
+    color: #e6e6e6; /* Light text color for select */
+}
+
+/* Button styles */
+button {
+    padding: 10px;
+    background-color: #2d2d2d; /* Base color */
+    color: #e6e6e6; /* Light text color for button */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #444; /* Darker hover effect */
+    color: #fff; /* Light text color on hover */
+}
+
+a {
+    color: #3498db; /* Accent color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+a:hover {
+    color: #1a1a1a; /* Darker text color on hover */
+}
+
+header {
+    background-color: #333; /* Dark header background */
+    color: #fff; /* Light text color for header */
+    padding: 20px;
+    text-align: center;
+}
+
+header a {
+    color: #fff; /* Light text color for the anchor */
+    text-decoration: none;
+}
+
+nav {
+    background-color: #444; /* Slightly darker navigation background */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff; /* Light text color for navigation links */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+</style> 
+</head>
+<body>
+
+    <header>
+        <a href="/">
+            <h1>To The Moon!</h1>
+        </a> 
+    </header>
+
+    <nav>
+        <a href="/login">Login</a>
+        <a href="/submits">Submits</a>
+    </nav>
+
+
+  <div class="container">
+    <form action="/register" method="post">
+
+      <label for="usernameName">Enter a username:</label>
+      <input type="text" id="usernameName" name="usernameName" maxlength="12" minlength="4" placeholder="Type here" required>
+
+      <label for="userName">Enter name:</label>
+      <input type="text" id="userName" name="userName" placeholder="Type here" required>
+
+      <label for="userAge">Enter age:</label>
+      <input type="text" id="userAge" name="userAge" placeholder="Type here" required>
+
+      <label for="userAge">Enter e-mail</label>
+      <input type="email" id="userMail" name="userMail" placeholder="Type here" required>
+
+      <label for="userSex">Select sex:</label>
+      <select name="selectedSex" id="sexes" required>
+        <optgroup label="genders">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="mentallyIll">Mentally ill</option>
+        </optgroup>
+      </select>
+
+      <label for="userPassword">Enter password:</label>
+      <input type="password" id="userPassword" name="userPassword" placeholder="Type here" required>
+
+      <label for="userPassword">re-enter password:</label>
+      <input type="password" id="userPassword" name="userPassword" placeholder="Type here" required>
+
+      <button type="submit">Submit</button>
+    </form> 
+  </div>
+
+</body>
+</html>
